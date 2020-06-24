@@ -31,6 +31,7 @@ wingpanel_indicatorsdir = wingpanel_dep.get_pkgconfig_variable('indicatorsdir', 
 shared_module(
     meson.project_name(),
     'src/Indicator.vala',
+    'src/Widgets/DeviceMenuItem.vala',
     'src/Widgets/DisplayWidget.vala',
     'src/Widgets/Scale.vala',
     'src/Widgets/MprisGui.vala',
@@ -38,8 +39,10 @@ shared_module(
     'src/Services/MprisClient.vala',
     'src/Services/Volume-control.vala',
     'src/Services/Manager.vala',
+    'src/Services/Device.vala',
     'src/Services/BluezDevice.vala',
     'src/Services/MediaPlayer.vala',
+    'src/Services/PulseAudioManager.vala',
     asresources,
     dependencies: [
         dependency('glib-2.0'),
