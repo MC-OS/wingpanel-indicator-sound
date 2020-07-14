@@ -57,9 +57,7 @@ public class Sound.Indicator : Wingpanel.Indicator {
     public static GLib.Settings settings;
 
     public Indicator () {
-        Object (code_name: Wingpanel.Indicator.SOUND,
-                display_name: _("Indicator Sound"),
-                description: _("The sound indicator"));
+        Object (code_name: Wingpanel.Indicator.SOUND);
     }
 
     static construct {
